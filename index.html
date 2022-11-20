@@ -3,6 +3,11 @@
 		<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700" rel="stylesheet">
 	</head>
 	<style>
+	
+		* {
+			margin: 0;
+		}
+		
 		body {
 			background: rgb(93,90,161);
 			background: linear-gradient(270deg, rgba(93,90,161,1) 0%, rgba(161,206,215,1) 100%);
@@ -38,10 +43,11 @@
 			font-variation-settings: "wght" 550;
 			display: inline-block;
 			text-align: center;
-			font-size: 5em;
+			font-size: 7em;
 		}
 		
 		.intro-container {
+			margin-top: 2em;
 			width: 100%;
 		}
 		
@@ -79,23 +85,52 @@
 			font-variation-settings: "wght" 600;
 		}
 		
+		.menubar {
+			position: sticky;
+			top: 0;
+			width: 20%;
+			height: 100vh;
+			overflow: hidden;
+			background-color: white;
+		}
+		
+		.menu-header {
+			background: gray;
+			height: 12vh;
+			padding-top: 0.5em;
+			padding-left: 0.5em;
+			padding-bottom: 0;
+			font-size: 4em;
+			font-family: 'Figtree', serif;
+			font-variation-settings: "wght" 550;
+		}
+		
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+		
 	</style>
 	<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@latest?module"></script>
 	<body>
-		<div class=intro-container>
-			<div class="text-container title-container">
-				<div class=title>Welcome to Justin's personal site.</div>
+		<div class=container>
+			<div class=menubar>
+				<div class="menu-header">Justin <div style="font-size:0.3em">(Jman005)</div></div>
 			</div>
-			<div class=text-container>
-				<div class=description>I'm a CS student @ <a href=https://uwaterloo.ca/>UWaterloo</a> looking to make really neat things with computers. Some of my interests include biking, neural networks, audio engineering, automation, culinary experimentation and pseudo-philosophy.
-				Want to learn more about me? Have a look at the menu on the left for my portfolio, resume and more.</div>
-			</div>
-			<div class=embed-container>
-					<github-card data-user="jman005"></github-card>
-					<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-					<iframe style="border: 0; width: 350px; height: 470px; margin: 4em" src="https://bandcamp.com/EmbeddedPlayer/album=1649481392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://jm-5.bandcamp.com/album/scp-area-89-ost-ep-1">SCP Area 89 OST - EP 1 by JM5</a></iframe>
+			<div class=intro-container>
+				<div class="text-container title-container">
+					<div class=title>Welcome to Justin's personal site.</div>
+				</div>
+				<div class=text-container>
+					<div class=description>I'm a CS student @ <a href=https://uwaterloo.ca/>UWaterloo</a> looking to make really neat things with computers. Some of my interests include biking, neural networks, audio engineering, automation, culinary experimentation and pseudo-philosophy.
+					Want to learn more about me? Have a look at the menu on the left for my portfolio, resume and more.</div>
+				</div>
+				<div class=embed-container>
+						<github-card data-user="jman005"></github-card>
+						<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+						<iframe style="border: 0; width: 350px; height: 470px; margin: 4em" src="https://bandcamp.com/EmbeddedPlayer/album=1649481392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://jm-5.bandcamp.com/album/scp-area-89-ost-ep-1">SCP Area 89 OST - EP 1 by JM5</a></iframe>
+				</div>
 			</div>
 		</div>
-
 	</body>
 </html>
