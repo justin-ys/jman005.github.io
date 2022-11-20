@@ -23,23 +23,13 @@
 			}
 		}
 		
-		.intro-container {
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-			margin-top: 6em;
-			place-items: center;
-			width: 50%;
-			margin-left: 25%;
-		}
-		
 		.embed-container {
 			display: flex;
 			place-items: center;
 			align-items: center;
 			justify-content: center;
 			margin: 1em;
-			width: 50.01%;
+			width: 50%;
 			margin-left: 25%;
 		}
 		
@@ -50,12 +40,39 @@
 			text-align: center;
 			font-size: 5em;
 		}
+		
+		.intro-container {
+			width: 100%;
+		}
+		
+		.text-container {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			margin-top: 2em;
+			place-items: center;
+			align-items: center;
+			width: 50%;
+			justify-content: center;
+			margin-left: 25%;
+			margin-right: 25%
+			width: 100vh;
+		}
+		
+		.title-container{
+			width: 50%;
+			border-bottom: 1px solid black;
+		}
+		
 		.description {
+			margin-top: 1.5em;
+			margin-bottom: 2em;
 			font-family: 'Figtree', serif;
 			font-variation-settings: "wght" 400;
 			display: inline-block;
 			text-align: center;
-			font-size: 1.5em;
+			font-size: 2em;
+			line-height: 150%;
 		}
 		
 		.description b {
@@ -66,13 +83,19 @@
 	<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@latest?module"></script>
 	<body>
 		<div class=intro-container>
-			<div class=title>Welcome! Thanks for stopping by.</div>
-			<div class=description>You've reached <b>Justin's</b> personal site. There's still a few pieces in development, so why not have a look at some of my <b>GitHub</b> projects and <b>Bandcamp</b> in the meantime? But I really do appreciate you having a look!</div>
+			<div class="text-container title-container">
+				<div class=title>Welcome to Justin's personal site.</div>
+			</div>
+			<div class=text-container>
+				<div class=description>I'm a CS student @ <a href=https://uwaterloo.ca/>UWaterloo</a> looking to make really neat things with computers. Some of my interests include biking, neural networks, audio engineering, automation, culinary experimentation and pseudo-philosophy.
+				Want to learn more about me? Have a look at the menu on the left for my portfolio, resume and more.</div>
+			</div>
+			<div class=embed-container>
+					<github-card data-user="jman005"></github-card>
+					<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+					<iframe style="border: 0; width: 350px; height: 470px; margin: 4em" src="https://bandcamp.com/EmbeddedPlayer/album=1649481392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://jm-5.bandcamp.com/album/scp-area-89-ost-ep-1">SCP Area 89 OST - EP 1 by JM5</a></iframe>
+			</div>
 		</div>
-		<div class=embed-container>
-			<github-card data-user="jman005"></github-card>
-			<script src="https://cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
-			<iframe style="border: 0; width: 350px; height: 470px; margin: 4em" src="https://bandcamp.com/EmbeddedPlayer/album=1649481392/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://jm-5.bandcamp.com/album/scp-area-89-ost-ep-1">SCP Area 89 OST - EP 1 by JM5</a></iframe>
-		</div>
+
 	</body>
 </html>
