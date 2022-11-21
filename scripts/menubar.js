@@ -1,12 +1,12 @@
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "menubar.html", true);
-xhr.setRequestHeader('Content-type', 'text/html');
 xhr.onreadystatechange= function() {
     if (this.readyState!==4) return;
     if (this.status!==200) {
 		document.getElementById('menubar').innerHTML = "Whoops! Looks like there was a problem loading the Menu Bar...";
 	}
     document.getElementById('menubar').innerHTML = this.responseText;
+	document.getElementById('menubar').setAttribute("style", "width: 22em; height: 100vh; border-right: 1px solid black; background-color: #d3d6db;");
 	console.log(document.getElementById('menubar').innerHTML);
 };
 xhr.send();

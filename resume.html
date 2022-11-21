@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700" rel="stylesheet">
+		<link rel="stylesheet" href="styles/menubar.css">
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		.pdf-container {
+			display: flex;
+			flex-direction: column;
+			place-items: top;
+			align-items: top;
+			width: 60%;
+			margin-top: 2.5em;
+			height: 25%
+			justify-content: center;
+			margin-left: 15%;
+			margin-right: 25%
+			width: 100vh;
+		}
+		
+		.description {
+			margin-top: 1.5em;
+			margin-bottom: 2em;
+			font-family: 'Figtree', serif;
+			font-variation-settings: "wght" 400;
+			display: inline-block;
+			line-height: 150%;
+			font-size: 0.95em;
+		}
+		
+	</style>
+	<script src="scripts/menubar.js"></script>
+	<body>
+		<div class="container">
+			<div id='menubar'></div>
+			<div class=pdf-container>
+				<embed src="resource/resume-redacted.pdf#toolbar=0" width=1000 height=1200/>
+				<div class=description>Please note that some info has been redacted for privacy reasons. If you'd like to contact me about employment, please email: justindev@protonmail.com</div>
+			</div>
+		</div>
+	</body>
+</html>
