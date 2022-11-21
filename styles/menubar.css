@@ -1,0 +1,19 @@
+.menubar {
+	position: sticky;
+	top: 0;
+	width: 20%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: white;
+}
+
+.menu-header {
+	background: gray;
+	height: 12vh;
+	padding-top: 0.5em;
+	padding-left: 0.5em;
+	padding-bottom: 0;
+	font-size: 4em;
+	font-family: 'Figtree', serif;
+	font-variation-settings: "wght" 550;
+}
