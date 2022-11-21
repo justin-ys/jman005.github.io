@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700" rel="stylesheet">
@@ -7,6 +8,7 @@
 	
 		* {
 			margin: 0;
+			padding: 0;
 		}
 		
 		body {
@@ -44,7 +46,7 @@
 			font-variation-settings: "wght" 550;
 			display: inline-block;
 			text-align: center;
-			font-size: 7em;
+			font-size: 6em;
 		}
 		
 		.intro-container {
@@ -93,11 +95,10 @@
 		
 	</style>
 	<script type="module" src="https://unpkg.com/@rocktimsaikia/github-card@latest?module"></script>
+	<script src="scripts/menubar.js"></script>
 	<body>
 		<div class=container>
-			<div class=menubar>
-				<div class="menu-header">Justin <div style="font-size:0.3em">(Jman005)</div></div>
-			</div>
+			<div id='menubar' style="width: 25%"></div>
 			<div class=intro-container>
 				<div class="text-container title-container">
 					<div class=title>Welcome to Justin's personal site.</div>
