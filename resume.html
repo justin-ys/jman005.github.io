@@ -3,7 +3,6 @@
 	<head>
 		<title>My resume.</title>
 		<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..700" rel="stylesheet">
-		<link rel="stylesheet" href="styles/menubar.css">
 	</head>
 	<style>
 		* {
@@ -11,25 +10,18 @@
 			padding: 0;
 		}
 		
-		.container {
-			display: flex;
-			justify-content: space-between;
-			align-items: stretch;
-			height: 100vh;
+		html {
+			height: 100%;
+			background-repeat:no-repeat;
 		}
 		
 		.pdf-container {
+			align-items: center;
 			display: flex;
 			flex-direction: column;
-			place-items: top;
-			align-items: top;
-			width: 60%;
-			margin-top: 2.5em;
-			height: 25%
-			justify-content: center;
-			margin-left: 15%;
-			margin-right: 25%
-			width: 100vh;
+			place-items: center;
+			width: 50%;
+			margin-left: 25%;
 		}
 		
 		.description {
@@ -39,7 +31,27 @@
 			font-variation-settings: "wght" 400;
 			display: inline-block;
 			line-height: 150%;
-			font-size: 0.95em;
+			font-size: 0.8vw;
+		}
+		
+		.container {
+			display: flex;
+			flex-direction: column;
+			gap: 1vw;
+		}
+		
+		.resume-title {
+			font-family: 'Figtree', serif;
+			font-variation-settings: "wght" 600;
+			font-size: 2vw;
+			margin-bottom: 0.5vw;
+		}
+		
+		.resume-footer {
+			font-family: 'Figtree', serif;
+			font-variation-settings: "wght" 550;
+			font-size: 0.6vw;
+			margin-bottom: 1vw;
 		}
 		
 	</style>
@@ -47,8 +59,10 @@
 	<body>
 		<div class="container">
 			<div id='menubar'></div>
-			<div class=pdf-container>
-				<embed src="resource/resume-redacted.pdf#toolbar=0" width=900 height=1100/>
+			<div class="pdf-container">
+				<div class="resume-title">My Resume!</div>
+				<div class="resume-footer">As of: 2023/06/12</div>
+				<iframe src="resource/resume-redacted.pdf#toolbar=0" style="width: 30vw; height: 40vw"></iframe>
 				<div class=description>Please note that some info has been redacted for privacy reasons. <br> If you'd like to contact me about employment, please email: justindev@protonmail.com</div>
 			</div>
 		</div>
